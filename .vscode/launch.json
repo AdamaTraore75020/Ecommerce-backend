@@ -9,6 +9,16 @@
             "projectName": "order-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-InventoryServiceApplication<inventory-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "fr.adamatraore.inventoryservice.InventoryServiceApplication",
+            "projectName": "inventory-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

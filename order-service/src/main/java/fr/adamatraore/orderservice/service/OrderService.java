@@ -2,7 +2,9 @@ package fr.adamatraore.orderservice.service;
 
 import java.util.UUID;
 
+
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import fr.adamatraore.orderservice.dto.OrderRequest;
 import fr.adamatraore.orderservice.mapper.OrderMapper;
@@ -12,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class OrderService {
 
     private final OrderMapper orderMapper;
